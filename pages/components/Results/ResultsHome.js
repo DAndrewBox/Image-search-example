@@ -21,7 +21,7 @@ export default function ResultsHome({ imageUrls, setShowImages }) {
 
     return (
         <main className="container">
-            <div className="container-fluid text-center">
+            <div className="container-fluid text-center w-100">
                 <ResultsTitle/>
 
                 <div className="row align-items-top">
@@ -33,7 +33,7 @@ export default function ResultsHome({ imageUrls, setShowImages }) {
                                         src = {image}
                                         alt = ""
                                         objectFit= "cover"
-                                        layout = "fill"
+                                        layout = "responsive"
                                         placeholder = "blur"
                                         className = "rounded mx-auto my-2 img-fluid shadow img-thumbnail"
                                     />
