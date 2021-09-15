@@ -27,12 +27,14 @@ export default function ResultsHome({ imageUrls, setShowImages }) {
                 <div className="row align-items-top">
                     {imageUrls?.map((image, key) => {
                         return (
-                            <div className="col-sm-6" key={key}>
+                            <div className="col col-sm-6" key={key}>
                                 <a href={image}>
                                     <Image
                                         src = {image}
                                         alt = ""
-                                        layout = 'fill'
+                                        objectFit= "cover"
+                                        layout = "fill"
+                                        placeholder = "blur"
                                         className = "rounded mx-auto my-2 img-fluid shadow img-thumbnail"
                                     />
                                 </a>
