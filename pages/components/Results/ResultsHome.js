@@ -26,13 +26,14 @@ export default function ResultsHome({ imageUrls, setShowImages }) {
                 <ResultsTitle/>
 
                 <div className="row align-items-top">
-                    {imageUrls.map((image) => {
+                    {imageUrls.map((image, key) => {
                         return (
                             <div className="col-sm-6">
                                 <a href={image}>
                                     <Image
-                                        src={image}
-                                        className="rounded mx-auto my-2 img-fluid shadow img-thumbnail"
+                                        src = {image}
+                                        alt = ""
+                                        className = "rounded mx-auto my-2 img-fluid shadow img-thumbnail"
                                     />
                                 </a>
                             </div>
