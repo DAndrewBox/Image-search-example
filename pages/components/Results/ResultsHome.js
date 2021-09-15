@@ -25,7 +25,7 @@ export default function ResultsHome({ imageUrls, setShowImages }) {
                 <ResultsTitle/>
 
                 <div className="row align-items-top">
-                    {imageUrls.map((image, key) => {
+                    {imageUrls?.map((image, key) => {
                         return (
                             <div className="col-sm-6" key={key}>
                                 <a href={image}>
