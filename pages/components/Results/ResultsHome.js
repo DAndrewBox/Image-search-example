@@ -1,7 +1,9 @@
 import ResultsTitle from "./ResultsTitle";
-import ResultsButton from "./ResultsButton"
+import ResultsButton from "./ResultsButton";
+import Image from "next/image";
 
 export default function ResultsHome({ imageUrls, setShowImages }) {
+
     if (imageUrls.length < 1) {
         return (
             <main className="container">
@@ -28,7 +30,10 @@ export default function ResultsHome({ imageUrls, setShowImages }) {
                         return (
                             <div className="col-sm-6">
                                 <a href={image}>
-                                    <img src={image} className="rounded mx-auto my-2 img-fluid shadow img-thumbnail" />
+                                    <Image
+                                        src={image}
+                                        className="rounded mx-auto my-2 img-fluid shadow img-thumbnail"
+                                    />
                                 </a>
                             </div>
                         )
