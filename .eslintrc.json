@@ -1,3 +1,9 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": "next/core-web-vitals",
+  "rules": {
+    // Other rules
+
+    // This fixes the Image filling entire screen bug recurring from v10.0.0
+    "@next/next/no-img-element": "off"
+  }
 }

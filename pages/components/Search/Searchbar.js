@@ -14,7 +14,7 @@ export default function Searchbar({ setShowImages, setImageUrls }) {
     }
 
     return (
-        <div className="container-fluid w-75">
+        <div className="container-fluid w-50">
             <div className="row mx-auto align-items-center mb-3">
                 <div className="col">
                 <input type="text" className="form-control" placeholder="Escribe algo..."

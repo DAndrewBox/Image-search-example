@@ -1,6 +1,5 @@
 import ResultsTitle from "./ResultsTitle";
 import ResultsButton from "./ResultsButton";
-import Image from "next/image";
 
 export default function ResultsHome({ imageUrls, setShowImages }) {
     if (imageUrls?.length < 1) {
@@ -28,16 +27,10 @@ export default function ResultsHome({ imageUrls, setShowImages }) {
                     {imageUrls?.map((image, key) => {
                         return (
                             <div className="col col-sm-6" key={key}>
-                                <a href={image}>
-                                    <Image
-                                        src = {image}
-                                        alt = ""
-                                        objectFit= "cover"
-                                        layout = "responsive"
-                                        placeholder = "blur"
-                                        className = "rounded mx-auto my-2 img-fluid shadow img-thumbnail"
-                                    />
-                                </a>
+                                <img
+                                    src = {image}
+                                    className = "rounded mx-auto my-2 shadow img-thumbnail"
+                                />
                             </div>
                         )
                     })}
