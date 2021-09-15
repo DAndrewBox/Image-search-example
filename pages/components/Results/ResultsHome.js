@@ -3,8 +3,7 @@ import ResultsButton from "./ResultsButton";
 import Image from "next/image";
 
 export default function ResultsHome({ imageUrls, setShowImages }) {
-
-    if (imageUrls.length < 1) {
+    if (imageUrls?.length < 1) {
         return (
             <main className="container">
                 <div className="container-fluid text-center">
@@ -33,6 +32,7 @@ export default function ResultsHome({ imageUrls, setShowImages }) {
                                     <Image
                                         src = {image}
                                         alt = ""
+                                        layout = 'fill'
                                         className = "rounded mx-auto my-2 img-fluid shadow img-thumbnail"
                                     />
                                 </a>
